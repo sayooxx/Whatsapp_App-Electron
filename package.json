@@ -18,6 +18,19 @@
     "electron": "^35.1.2",
     "electron-builder": "^26.0.12"
   },
+  "build": {
+  "appId": "sayooj.whatsapp.deskapp",
+  "linux": {
+    "target": ["AppImage", "deb", "rpm", "snap", "tar.gz"],
+    "category": "Network",
+    "icon": "assets/whatsapp-icon.png"
+    }
+  },
+"scripts": {
+  "start": "electron .",
+  "pack": "electron-builder --dir",
+  "dist": "electron-builder --linux"
+},
   "name": "whatsapp_app_sayooj",
   "version": "1.0.0",
   "description": "WhatsApp client built with Electron by Sayooj",
@@ -25,3 +38,4 @@
   "author": "sayooxx <metech87@gmail.com>",
   "license": "MIT"
 }
+
