@@ -17,5 +17,11 @@
   "devDependencies": {
     "electron": "^35.1.2",
     "electron-builder": "^26.0.12"
-  }
+  },
+  "name": "whatsapp_app_sayooj",
+  "version": "1.0.0",
+  "description": "WhatsApp client built with Electron by Sayooj",
+  "repository": "https://github.com/sayooxx/Whatsapp_App-Electron",
+  "author": "sayooxx <metech87@gmail.com>",
+  "license": "MIT"
 }
