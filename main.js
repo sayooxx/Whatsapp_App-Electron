@@ -15,6 +15,10 @@ function createWindow() {
     icon: path.join(__dirname, 'assets', 'whatsapp-icon.png') // Optional: add an icon
   });
 
+  mainWindow.loadURL('https://web.whatsapp.com', {
+    userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+  });
+
   // Load WhatsApp Web
   mainWindow.loadURL('https://web.whatsapp.com');
 
@@ -58,3 +62,5 @@ ipcMain.on('notification-click', () => {
     mainWindow.focus();
   }
 });
+
+app.whenReady().then(createWindow);
